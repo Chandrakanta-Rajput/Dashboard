@@ -8,8 +8,8 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
    useEffect(() => {
-     axios.get("http://13.233.106.209:3002/allHoldings").then((res) => {
-        console.log(res.data);
+     axios.get("http://65.2.38.33:3002/allHoldings").then((res) => {
+         console.log(res.data);
       setAllHoldings(res.data);
     });
   }, []);
